@@ -182,7 +182,7 @@ export function LandingPage({ onSelectInquiry, onOpenWorkspace, onOpenMustKnow }
             onClick={onOpenWorkspace}
             className="px-6 py-3 rounded-xl font-bold text-sm text-white bg-linear-to-r from-cyan-500 via-blue-600 to-indigo-600 hover:brightness-110 shadow-lg shadow-cyan-500/30 active:scale-95 transition-all flex items-center gap-2 cursor-pointer"
           >
-            <span>🚀 Open Research Workspace</span>
+            <span> Open Research Workspace</span>
             <ArrowRight className="w-4 h-4" />
           </button>
           {onOpenMustKnow && (
@@ -191,7 +191,7 @@ export function LandingPage({ onSelectInquiry, onOpenWorkspace, onOpenMustKnow }
               className="px-5 py-3 rounded-xl font-bold text-sm text-indigo-700 dark:text-indigo-300 bg-indigo-50/90 dark:bg-indigo-950/40 border border-indigo-300 dark:border-indigo-700/60 hover:bg-indigo-100 dark:hover:bg-indigo-900/50 shadow-sm active:scale-95 transition-all flex items-center gap-2 cursor-pointer"
             >
               <BookOpen className="w-4 h-4 text-indigo-500" />
-              <span>📖 Must Know: Concepts &amp; 4-Level Architecture</span>
+              <span>Must Know: Concepts &amp; 4-Level Architecture</span>
             </button>
           )}
         </div>
@@ -239,7 +239,7 @@ export function LandingPage({ onSelectInquiry, onOpenWorkspace, onOpenMustKnow }
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 brightness-95 group-hover:brightness-105"
                   />
                   <div className="absolute inset-0 bg-linear-to-t from-slate-950/85 via-slate-950/30 to-transparent" />
-                  
+
                   {/* Era pill */}
                   <span className="absolute bottom-2.5 left-2.5 text-[10px] font-mono px-2.5 py-1 rounded-md bg-slate-900/90 text-white border border-slate-700/80 font-bold shadow-xs">
                     {event.era}

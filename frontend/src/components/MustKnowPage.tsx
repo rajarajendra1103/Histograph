@@ -54,14 +54,14 @@ export function MustKnowPage({
               onClick={onOpenWorkspace}
               className="px-5 py-2.5 rounded-xl font-bold text-xs sm:text-sm text-white bg-linear-to-r from-cyan-500 via-blue-600 to-indigo-600 hover:brightness-110 shadow-lg shadow-cyan-500/30 active:scale-95 transition-all flex items-center gap-2 cursor-pointer"
             >
-              <span>🚀 Open Research Workspace</span>
+              <span>Open Research Workspace</span>
               <ArrowRight className="w-4 h-4" />
             </button>
             <button
               onClick={onOpenLanding}
               className="px-5 py-2.5 rounded-xl font-bold text-xs sm:text-sm text-slate-300 hover:text-white bg-slate-900/80 hover:bg-slate-800 border border-slate-700/80 active:scale-95 transition-all flex items-center gap-2 cursor-pointer"
             >
-              <span>🏛️ Return to Landing Page</span>
+              <span>Return to Landing Page</span>
             </button>
           </div>
         </div>

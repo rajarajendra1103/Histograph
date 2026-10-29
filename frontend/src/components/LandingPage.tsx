@@ -182,7 +182,7 @@ export function LandingPage({ onSelectInquiry, onOpenWorkspace, onOpenMustKnow }
             onClick={onOpenWorkspace}
             className="px-6 py-3 rounded-xl font-bold text-sm text-white bg-linear-to-r from-cyan-500 via-blue-600 to-indigo-600 hover:brightness-110 shadow-lg shadow-cyan-500/30 active:scale-95 transition-all flex items-center gap-2 cursor-pointer"
           >
-            <span> Open Research Workspace</span>
+            <span>Open Research Workspace</span>
             <ArrowRight className="w-4 h-4" />
           </button>
           {onOpenMustKnow && (
@@ -369,7 +369,7 @@ export function LandingPage({ onSelectInquiry, onOpenWorkspace, onOpenMustKnow }
           onClick={onOpenWorkspace}
           className="px-8 py-3.5 rounded-2xl font-bold text-sm text-white bg-linear-to-r from-cyan-500 via-blue-600 to-indigo-600 hover:brightness-110 shadow-xl shadow-cyan-500/35 active:scale-95 transition-all inline-flex items-center gap-2.5 cursor-pointer"
         >
-          <span>🚀 Launch Custom Historical Investigation</span>
+          <span>Launch Custom Historical Investigation</span>
           <ArrowRight className="w-4 h-4" />
         </button>
         <p className="text-xs text-slate-500 mt-2">

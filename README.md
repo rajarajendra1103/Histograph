@@ -7,17 +7,18 @@
 
 ---
 
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-2563EB.svg?style=flat-square&logo=apache&logoColor=white)](LICENSE)
 [![FastAPI](https://img.shields.io/badge/Backend-FastAPI_0.110+-009688.svg?style=flat-square&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
 [![React](https://img.shields.io/badge/Frontend-React_19_|_Vite_|_Tailwind_v4-61DAFB.svg?style=flat-square&logo=react&logoColor=black)](https://react.dev)
 [![NetworkX](https://img.shields.io/badge/Graph-In--Memory_NetworkX-blue.svg?style=flat-square)](https://networkx.org)
 [![Cytoscape](https://img.shields.io/badge/Visualization-Cytoscape.js-EA580C.svg?style=flat-square)](https://js.cytoscape.org)
 [![Python](https://img.shields.io/badge/Python-3.11+-3776AB.svg?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
-[![License](https://img.shields.io/badge/License-Apache_2.0-green.svg?style=flat-square)](LICENSE)
 
 <br/>
 
+[![Open Source License: Apache 2.0](https://img.shields.io/badge/📜_Open_Source_License-Apache_2.0-2563EB?style=for-the-badge&logo=apache)](LICENSE)
 [![Preview Flowchart](https://img.shields.io/badge/🔍_Preview-Architecture_Flowchart-6366F1?style=for-the-badge)](#-how-it-works)
-[![Quick Start](https://img.shields.io/badge/🚀_Quick_Start-Run_Locally-059669?style=for-the-badge)](#-quick-start-no-docker-needed)
+[![Quick Start](https://img.shields.io/badge/🚀_Quick_Start-Run_Locally-059669?style=for-the-badge)](#-quick-start--setup-guide)
 [![Laya Engine](https://img.shields.io/badge/🛡️_Policy_Engine-Laya_5--Point_Checks-0284C7?style=for-the-badge)](#-laya-policy-engine-5-point-verification)
 
 </div>
@@ -50,14 +51,17 @@
   - [Output 1: Evidence-Based Historical Reconstruction](#output-1-evidence-based-historical-reconstruction)
   - [Output 2: Full-Picture (4-Level Theory Architecture)](#output-2-full-picture-4-level-theory-architecture)
 - [💻 Multi-Provider LLM Support & Live Token Tracker](#-multi-provider-llm-support--live-token-tracker)
-- [📂 Project Structure](#-project-structure)
-- [🚀 Quick Start (No Docker Needed)](#-quick-start-no-docker-needed)
-  - [Step 1: Install Dependencies](#step-1-install-dependencies)
-  - [Step 2: Run Backend](#step-2-run-backend)
-  - [Step 3: Access in Browser](#step-3-access-in-browser)
+- [🔐 API Key Security (Zero-Leakage Architecture)](#-api-key-security-zero-leakage-architecture)
+- [🚀 Quick Start & Setup Guide](#-quick-start--setup-guide)
+  - [Prerequisites](#prerequisites)
+  - [Step 1: Clone the Repository](#step-1-clone-the-repository)
+  - [Step 2: Install Python Dependencies](#step-2-install-python-dependencies)
+  - [Step 3: Launch Histograph](#step-3-launch-histograph)
+  - [Step 4: Open in Your Browser](#step-4-open-in-your-browser)
 - [🔌 API Reference](#-api-reference)
 - [🧪 Testing & Benchmarks](#-testing--benchmarks)
 - [⚖️ Ethics, robots.txt Compliance & Fair Use](#-ethics-robotstxt-compliance--fair-use)
+- [📜 License](#-license)
 
 ---
 
@@ -242,6 +246,73 @@ flowchart TD
     end
 ```
 
+<br/>
+
+#### Universal Text-Art Architecture Flowchart (Readable in Any Text Editor)
+
+```text
+ ┌────────────────────────────────────────────────────────┐
+ │               User Historical Inquiry                  │
+ └──────────────────────────┬─────────────────────────────┘
+                            │
+                            ▼
+ ┌────────────────────────────────────────────────────────┐
+ │           Phase 1: Planner Agent                       │
+ │  Deconstructs into 3 sub-queries, epochs & entities    │
+ └──────────────────────────┬─────────────────────────────┘
+                            │
+                            ▼
+ ┌────────────────────────────────────────────────────────┐
+ │       Phase 2: Multi-Repository Fan-Out Ingestion      │
+ │  • Internet Archive OCR      • Library of Congress     │
+ │  • OpenAlex & CrossRef       • Semantic Scholar & CORE │
+ │  • Wikipedia MediaWiki       • Web (Trafilatura/HTML)  │
+ │  • YouTube (yt-dlp/Whisper)  • Social Leads (Reddit)   │
+ └──────────────────────────┬─────────────────────────────┘
+                            │
+                            ▼
+ ┌────────────────────────────────────────────────────────┐
+ │       Phase 3: Sandboxing & Verbatim Extraction        │
+ │  • XML Untrusted Data Sandboxing                       │
+ │  • Verbatim Quotes (>= 20 chars) matched in text       │
+ │  • Named Entities: Person, Place, Event, Theory        │
+ └──────────────────────────┬─────────────────────────────┘
+                            │
+                            ▼
+ ┌────────────────────────────────────────────────────────┐
+ │     Phase 4: In-Memory NetworkX Knowledge Graph        │
+ │  • Nodes: Claims, Sources, Historical Entities         │
+ │  • Edges: CITES, MENTIONS, SUPPORTS, CONTRADICTS       │
+ └──────────────────────────┬─────────────────────────────┘
+                            │
+                            ▼
+ ┌────────────────────────────────────────────────────────┐
+ │     Phase 5: Laya Policy Engine (5 Core Checks)        │
+ │  [1] Citation Exists        [4] Source Independence    │
+ │  [2] Verbatim Quote Verified[5] Source Tier Hierarchy  │
+ │  [3] Date Consistency                                  │
+ │                                                        │
+ │  Verdicts:                                             │
+ │  🟢 ACCEPT        🟡 QUALIFY                           │
+ │  🔵 INVESTIGATE   🔴 REJECT                            │
+ └──────────────────────────┬─────────────────────────────┘
+                            │
+                            ▼
+ ┌────────────────────────────────────────────────────────┐
+ │     Phase 6: Timeline Reconciliation (BCE / CE)        │
+ │  • Integer normalization (e.g. -2500 for 2500 BCE)     │
+ │  • Date conflict alerts (> 150 yrs discrepancy)        │
+ └──────────────────────────┬─────────────────────────────┘
+                            │
+                            ▼
+ ┌────────────────────────────────────────────────────────┐
+ │             Phase 7: Syntheses & Exports               │
+ │  • Output 1: Evidence-Based Historical Reconstruction  │
+ │  • Output 2: 4-Level Historiographical Architecture    │
+ │  • Interactive Cytoscape.js Knowledge Graph Canvas     │
+ │  • Academic PDF Dossier with Graph Vector Snapshot     │
+ └────────────────────────────────────────────────────────┘
+```
 
 </details>
 
@@ -358,130 +429,70 @@ Tracks usage in real time via `GET /api/tokens`:
 
 ---
 
-## 📂 Project Structure
+## 🔐 API Key Security (Zero-Leakage Architecture)
 
-```text
-Histograph/
-├── app.py                      # Application launcher script
-├── requirements.txt            # Python dependencies
-├── .env.example                # Environment configuration template
-├── README.md                   # Project documentation
-│
-├── app/                        # Modular backend package
-│   ├── main.py                 # FastAPI application, CORS, static routes
-│   ├── config.py               # Provider endpoints, timeouts, rate limits
-│   │
-│   ├── agents/                 # Multi-agent research pipeline
-│   │   ├── orchestrator.py     # End-to-end async NDJSON generator
-│   │   ├── planner.py          # Query expansion & entity scoping
-│   │   ├── search_agent.py     # Concurrent multi-repository fan-out
-│   │   ├── archive_agent.py    # Primary scan & archive retriever
-│   │   ├── extractor.py        # Claim & verbatim quote extraction
-│   │   ├── graph_builder.py    # NetworkX builder & contradiction detector
-│   │   └── timeline.py         # BCE/CE normalization & date conflict analysis
-│   │
-│   ├── laya/                   # Laya verification policy engine
-│   │   ├── judge.py            # Claim verification coordinator
-│   │   ├── policy.py           # 5-tier LayaPolicyEngine implementation
-│   │   ├── checks.py           # Quote match, date checks, k-shingles
-│   │   ├── tiers.py            # SourceTier hierarchy classification
-│   │   ├── verdicts.py         # ACCEPT, QUALIFY, INVESTIGATE, REJECT
-│   │   └── investigate.py      # Automated corroboration task loop
-│   │
-│   ├── graph/                  # Graph data structure & export
-│   │   ├── store.py            # HistoricalGraph (NetworkX DiGraph wrapper)
-│   │   ├── schema.py           # NodeType, EdgeType definitions
-│   │   └── export.py           # Cytoscape.js JSON exporter
-│   │
-│   ├── reports/                # Report generation engines
-│   │   ├── evidence_based.py   # Output 1: Evidence-Based Reconstruction
-│   │   ├── full_picture.py     # Output 2: 4-Level Theory Architecture
-│   │   └── pdf.py              # ReportLab academic PDF generator
-│   │
-│   ├── sources/                # 10+ Ingestion adapters
-│   │   ├── base.py             # Source data model
-│   │   ├── wikipedia.py        # MediaWiki API
-│   │   ├── openalex.py         # Scholarly works & inverted abstracts
-│   │   ├── crossref.py         # CrossRef DOI catalog
-│   │   ├── semantic_scholar.py # Academic citation graph
-│   │   ├── core_api.py         # CORE open access repository
-│   │   ├── internet_archive.py # Internet Archive djvu OCR scans
-│   │   ├── loc.py              # Library of Congress manuscripts
-│   │   ├── openserp.py         # OpenSERP + Trafilatura + Playwright
-│   │   ├── youtube.py          # yt-dlp captions + Whisper STT
-│   │   ├── social.py           # Reddit r/AskHistorians, Mastodon, Bluesky
-│   │   └── rss.py              # Historical RSS feeds
-│   │
-│   ├── llm/                    # LLM integration & prompts
-│   │   ├── nvidia.py           # Unified client for Gemini, Groq, NVIDIA, Ollama
-│   │   ├── prompts.py          # Sandboxed system prompts
-│   │   └── tracker.py          # Real-time token consumption tracking
-│   │
-│   ├── api/                    # FastAPI route handlers
-│   │   ├── research.py         # POST /api/research (NDJSON SSE streaming)
-│   │   ├── models.py           # GET /api/models, /api/tokens, /test-key
-│   │   └── export.py           # POST /api/pdf (binary download)
-│   │
-│   └── static/                 # Static web assets
-│       └── dist/               # Compiled React 19 production bundle
-│
-├── frontend/                   # Modern React 19 Frontend
-│   ├── package.json            # React, Vite, Tailwind v4, Cytoscape.js
-│   ├── vite.config.ts          # Vite build configuration
-│   └── src/
-│       ├── App.tsx             # Main state coordinator & view router
-│       ├── types.ts            # TypeScript definitions
-│       ├── components/
-│       │   ├── LandingPage.tsx # Interactive hero with benchmark inquiries
-│       │   ├── MustKnowPage.tsx# Epistemic blueprint guide
-│       │   ├── SearchBar.tsx   # Query submission & model selector
-│       │   ├── AgentStepper.tsx# Multi-agent live progress stepper
-│       │   ├── TerminalLog.tsx # Live streaming terminal log
-│       │   ├── NodeDrawer.tsx  # Slide-over graph node inspector
-│       │   └── tabs/
-│       │       ├── EvidenceTab.tsx   # Output 1 view & verified claims grid
-│       │       ├── FullPictureTab.tsx# Output 2 view (4-level architecture)
-│       │       ├── TimelineTab.tsx   # Animated vertical timeline
-│       │       ├── GraphTab.tsx      # Cytoscape.js interactive graph
-│       │       └── UnresolvedTab.tsx # Unresolved debates & rejection audit
-│
-├── scripts/
-│   └── smoke_test.py           # Benchmark runner for 3 historical inquiries
-│
-└── tests/                      # Pytest test suite (28 passing tests)
-    ├── test_timeline.py        # BCE/CE normalization & date span tests
-    ├── test_quote_match.py     # Verbatim quote & fuzzy match tests
-    ├── test_laya_checks.py     # 5-point Laya policy checks
-    └── test_byok_providers.py  # Provider detection & token budgeting tests
+Histograph is designed with strict security standards to ensure **zero credential leakage**:
+
+1. **Git-Ignored Local Secrets**: The project `.gitignore` permanently excludes `.env`, `.env.local`, and all secret configuration files. They can never be committed or pushed to public repositories.
+2. **Zero Hardcoded Secrets**: There are no hardcoded default API keys in the source code. All inference clients dynamically read from environment variables or per-session HTTP headers.
+3. **Bring-Your-Own-Key (BYOK) via Browser UI**: Users can paste their API key directly into the web interface. Keys entered in the UI are held only in temporary browser memory and transmitted securely via request headers (`x-api-key`). They are never saved to disk.
+4. **Offline Heuristic Mode (No Key Required)**: If no API key is provided, Histograph automatically falls back to its deterministic, rule-based heuristic extraction engine. The engine functions fully without external cloud accounts.
+
+---
+
+## 🚀 Quick Start & Setup Guide
+
+Histograph runs directly on your machine without requiring complex databases or Docker:
+
+### Prerequisites
+- **Python 3.11+** installed on your system ([Download Python](https://www.python.org/downloads/))
+- **Git** installed ([Download Git](https://git-scm.com/))
+
+---
+
+### Step 1: Clone the Repository
+```bash
+git clone https://github.com/rajarajendra1103/Histograph.git
+cd Histograph
 ```
 
 ---
 
-## 🚀 Quick Start (No Docker Needed)
+### Step 2: Install Python Dependencies
+Create an optional virtual environment and install the required packages:
 
-Histograph runs directly on your machine with Python:
-
-### Step 1: Install Dependencies
-Open your terminal in the `Histograph` directory and install the requirements:
 ```bash
+# Optional: Create and activate virtual environment
+python -m venv venv
+
+# On Windows:
+venv\Scripts\activate
+# On macOS / Linux:
+source venv/bin/activate
+
+# Install requirements
 pip install -r requirements.txt
 ```
 
-### Step 2: Run Backend
-Start the engine:
+---
+
+### Step 3: Launch Histograph
+Run the application launcher:
+
 ```bash
 python app.py
 ```
-*(Or use `uvicorn app.main:app --port 8000 --reload`)*
+*(Alternatively, you can run directly with Uvicorn: `uvicorn app.main:app --port 8000 --reload`)*
 
-### Step 3: Access in Browser
+---
+
+### Step 4: Open in Your Browser
 Open your browser and navigate to:
 ```
 http://localhost:8000
 ```
-Histograph will automatically serve the modern React 19 user interface!
 
-> **API Key Note**: Histograph works out-of-the-box. If you want to use cloud LLMs (Gemini, Groq, NVIDIA NIM, or OpenRouter), you can paste your key in the UI or set it in `.env`. If no key is provided, Histograph automatically uses its high-accuracy heuristic extraction engine.
+The application will immediately serve the modern React 19 interface. You can type any historical inquiry (or click one of the preset benchmark buttons) and watch the research agents run in real time!
 
 ---
 
@@ -572,6 +583,22 @@ Histograph is designed for open scholarly research and adheres to responsible ex
 - **Polite Rate Limiting**: An in-memory rate limiter enforces delays between requests to the same domain to prevent server stress.
 - **In-Memory Caching**: HTTP responses from public repositories are cached locally for 1 hour to minimize duplicate queries.
 - **API Terms Compliance**: Users are responsible for complying with the API usage terms of external data providers (OpenAlex, CrossRef, Semantic Scholar, Internet Archive, Library of Congress, Reddit, Mastodon, Bluesky).
+
+---
+
+## 📜 License
+
+This project is licensed under the **Apache License, Version 2.0** - see the [LICENSE](LICENSE) file for details.
+
+```text
+Copyright 2026 rajarajendra1103
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+```
 
 ---
 

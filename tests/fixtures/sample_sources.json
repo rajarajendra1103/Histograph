@@ -1,0 +1,26 @@
+{
+  "S1": {
+    "id": "S1",
+    "title": "Indus Valley Civilisation - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Indus_Valley_Civilisation",
+    "text": "The Indus Valley Civilisation was a Bronze Age civilisation in the northwestern regions of South Asia, lasting from 3300 BCE to 1300 BCE, and in its mature form from 2600 BCE to 1900 BCE. By 1900 BCE, signs of a gradual decline began to emerge. Many scholars argue that aridification, shifting monsoon patterns, and drying of the Ghaggar-Hakra river system led to urban abandonment.",
+    "kind": "encyclopedia",
+    "date": null
+  },
+  "S2": {
+    "id": "S2",
+    "title": "Climate change and the decline of the Harappan civilization",
+    "url": "https://doi.org/10.1073/pnas.1112875109",
+    "text": "Geological and speleothem records indicate a prolonged weakened monsoon beginning around 2100 BCE across the Indian subcontinent. The reduction in river floods likely forced urban populations in the Indus valley to migrate eastward towards the Ganges basin, resulting in the de-urbanization of major Harappan centers.",
+    "kind": "scholarly",
+    "date": "2012"
+  },
+  "S3": {
+    "id": "S3",
+    "title": "Ancient South Asian Archaeology Records",
+    "url": "https://archive.org/details/ancientharappa",
+    "text": "Excavation reports at Mohenjo-daro demonstrate unburied skeletons found in street layers, which Mortimer Wheeler originally interpreted as evidence of a violent massacre by invading Aryan tribes, though modern forensic analysis has widely refuted this military invasion hypothesis.",
+    "kind": "archive",
+    "date": "1953"
+  }
+}

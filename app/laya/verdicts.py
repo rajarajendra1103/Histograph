@@ -1,0 +1,8 @@
+"""Laya verification verdicts and status definitions."""
+
+ACCEPT = "ACCEPT"
+QUALIFY = "QUALIFY"
+INVESTIGATE = "INVESTIGATE"
+REJECT = "REJECT"
+
+ALL_VERDICTS = [ACCEPT, QUALIFY, INVESTIGATE, REJECT]

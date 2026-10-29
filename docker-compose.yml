@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  openserp:
+    image: ghcr.io/karust/openserp:latest
+    container_name: histograph-openserp
+    ports:
+      - "7000:7000"
+    restart: unless-stopped
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1m"
+        max-file: "1"
+
+  histograph:
+    build: .
+    container_name: histograph-app
+    ports:
+      - "8000:8000"
+    environment:
+      - OPENSERP_URL=http://openserp:7000
+      - LLM_TIMEOUT=120.0
+    depends_on:
+      - openserp
+    restart: unless-stopped
